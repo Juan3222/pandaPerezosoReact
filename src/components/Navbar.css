@@ -1,0 +1,14 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+h1 {
+	font-size: 3rem;
+}
+.header_ul {
+	display: flex;
+	margin-right: 40rem;
+	gap: 2rem;
+	font-size: 2rem;
+}
