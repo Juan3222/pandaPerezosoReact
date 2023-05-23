@@ -1,4 +1,40 @@
-* {
-	margin: 0;
-	padding: 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  width: 100vw;
+  background-color: #f0bb8a;
+  box-shadow: inset 10px 10px 0px #957456, inset -10px -10px 0px #ffffbe;
 }
+.header .header__iconh1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: inset -10px -10px 0px #90b766, inset 10px 10px 0px #67a26e;
+  padding-right: 1rem;
+}
+.header .header__iconh1 h1 {
+  font-size: 4.5rem;
+}
+.header .header__iconh1 img {
+  height: 200px;
+  min-width: 250px;
+}
+.header .header_ul {
+  display: flex;
+  margin-right: 40rem;
+  gap: 2rem;
+  font-size: 2rem;
+  list-style: none;
+}
+.header .header_ul a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=App.css.map */

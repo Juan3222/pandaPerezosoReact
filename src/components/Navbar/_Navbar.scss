@@ -1,0 +1,38 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10%;
+	width: 100vw;
+	background-color: $background;
+	box-shadow: inset 10px 10px 0px #957456, inset -10px -10px 0px #ffffbe;
+
+	.header__iconh1 {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 8px;
+		box-shadow: inset -10px -10px 0px $secondary-color,
+			inset 10px 10px 0px $accent;
+		padding-right: 1rem;
+
+		h1 {
+			font-size: 4.5rem;
+		}
+		img {
+			height: 200px;
+			min-width: 250px;
+		}
+	}
+	.header_ul {
+		display: flex;
+		margin-right: 40rem;
+		gap: 2rem;
+		font-size: 2rem;
+		list-style: none;
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+}

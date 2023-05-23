@@ -1,10 +1,11 @@
-import "./Navbar.css";
-
 function Navbar() {
 	return (
 		<>
 			<header className="header">
-				<h1>Librería PandaPerezoso</h1>
+				<div className="header__iconh1">
+					<img src="src\assets\pandaIcon.png" alt="" />
+					<h1>Librería PandaPerezoso</h1>
+				</div>
 				<nav>
 					<ul className="header_ul">
 						<li>
