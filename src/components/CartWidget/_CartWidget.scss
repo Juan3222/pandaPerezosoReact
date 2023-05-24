@@ -1,0 +1,12 @@
+.cart {
+	display: flex;
+	width: 5rem;
+	height: 2rem;
+	margin-right: 2rem;
+	justify-content: center;
+	background-color: $accent;
+	gap: 1rem;
+	p {
+		font-size: 2rem;
+	}
+}

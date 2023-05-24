@@ -1,3 +1,5 @@
+import CartWidget from "../CartWidget/CartWidget";
+
 function Navbar() {
 	return (
 		<>
@@ -9,16 +11,17 @@ function Navbar() {
 				<nav>
 					<ul className="header_ul">
 						<li>
-							<a href="">Inicio</a>
+							<button href="">Inicio</button>
 						</li>
 						<li>
-							<a href="">Libros</a>
+							<button href="">Libros</button>
 						</li>
 						<li>
-							<a href="">Comics</a>
+							<button href="">Comics</button>
 						</li>
 					</ul>
 				</nav>
+				<CartWidget />
 			</header>
 		</>
 	);
