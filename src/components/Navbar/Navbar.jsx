@@ -4,10 +4,9 @@ function Navbar() {
 	return (
 		<>
 			<header className="header">
-				<div className="header__iconh1">
-					<img src="src\assets\pandaIcon.png" alt="" />
-					<h1>Librería PandaPerezoso</h1>
-				</div>
+				<h1>Librería PandaPerezoso</h1>
+				{/* <img src="src\assets\pandaIcon.png" alt="" /> */}
+
 				<nav>
 					<ul className="header_ul">
 						<li>
@@ -20,8 +19,8 @@ function Navbar() {
 							<button href="">Comics</button>
 						</li>
 					</ul>
+					<CartWidget />
 				</nav>
-				<CartWidget />
 			</header>
 		</>
 	);

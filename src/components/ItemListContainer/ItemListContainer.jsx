@@ -1,7 +1,25 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { getBooks } from "../../asyncMock";
+import { ItemList } from "../ItemList/ItemList";
 
-const ItemListContainer = ({ greeting }) => {
-	return <h1>{greeting}</h1>;
+const ItemListContainer = ({}) => {
+	const [books, setBooks] = useState([]);
+
+	useEffect(() => {
+		getBooks()
+			.then((res) => {
+				setBooks(res);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	}, []);
+
+	return (
+		<div>
+			<ItemList books={books}></ItemList>
+		</div>
+	);
 };
 
 export default ItemListContainer;

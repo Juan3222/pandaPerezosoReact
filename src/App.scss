@@ -1,7 +1,8 @@
 @import "./components/Variables/_Variables";
 @import "./components/Navbar/_Navbar.scss";
 @import "./components/CartWidget/CartWidget";
-
+@import "./components/ItemCount/ItemCount.scss";
+@import "./components/Item/Item.scss";
 * {
 	margin: 0;
 	padding: 0;
