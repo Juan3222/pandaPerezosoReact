@@ -1,0 +1,9 @@
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.count .count__buttons {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=ItemCount.css.map */

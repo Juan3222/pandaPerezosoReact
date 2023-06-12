@@ -7,6 +7,7 @@ const books = [
 		cover: "https://m.media-amazon.com/images/I/81-XD0DJiKL.jpg",
 		genre: "Fantasía",
 		stock: "10",
+		category: "Libro",
 	},
 	{
 		id: "1",
@@ -16,6 +17,7 @@ const books = [
 		cover: "https://www.penguinlibros.com/uy/2385579/juego-de-tronos-cancion-de-hielo-y-fuego-1.jpg",
 		genre: "Fantasía",
 		stock: "10",
+		category: "Libro",
 	},
 	{
 		id: "2",
@@ -25,6 +27,7 @@ const books = [
 		cover: "https://1.bp.blogspot.com/-ZyR9QhRn2MY/XvxFKYjBAFI/AAAAAAAAZPs/WIcAZt8Mkn0YriEGLXWgsRBWOCXlz7ykQCNcBGAsYHQ/s1600/dune.jpg",
 		genre: "Ciencia Ficción",
 		stock: "10",
+		category: "Libro",
 	},
 	{
 		id: "3",
@@ -34,6 +37,17 @@ const books = [
 		cover: "https://fajabooks.com/wp-content/uploads/2020/11/un.mundo_.sin_.fin_.jpg",
 		genre: "Novela Histórica",
 		stock: "10",
+		category: "Libro",
+	},
+	{
+		id: "4",
+		title: "Invencible",
+		author: "Robert Kirkman",
+		price: "2090",
+		cover: "https://content.eccediciones.com/productos/17290/PORTADA_JPG_WEB_invencible_1.jpg",
+		genre: "Superhéroes",
+		stock: "10",
+		category: "Comic",
 	},
 ];
 
@@ -41,6 +55,21 @@ export const getBooks = () => {
 	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(books);
+		}, 500);
+	});
+};
+
+export const getBookById = (bookId) => {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(books.find((book) => book.id === bookId));
+		}, 500);
+	});
+};
+export const getBooksByCategory = (bookCategory) => {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(books.filter((book) => book.category === bookCategory));
 		}, 500);
 	});
 };

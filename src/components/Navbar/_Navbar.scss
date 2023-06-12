@@ -3,11 +3,13 @@
 	justify-content: space-around;
 	align-items: center;
 	height: 10%;
-	width: 100vw;
 	background-color: $background;
 
 	h1 {
 		font-size: 4.5rem;
+		font-style: none;
+		list-style: none;
+		text-decoration: none;
 	}
 	img {
 		height: 200px;
@@ -15,35 +17,50 @@
 		margin: auto;
 	}
 
-	nav {
+	.Categories {
 		display: flex;
 		justify-content: flex-end;
 		gap: 1rem;
-		.header_ul {
+		.ActiveOption {
 			display: flex;
-			justify-content: flex-end;
+			justify-content: center;
 			gap: 2rem;
 			font-size: 2rem;
 			list-style: none;
-			a {
-				text-decoration: none;
-				color: black;
+			width: 130px;
+			border: 3px solid #90b766;
+			border-radius: 45px;
+			transition: all 0.3s;
+			cursor: pointer;
+			background: #3a4929;
+			font-size: 0.8em;
+			font-weight: 550;
+			font-family: "Montserrat", sans-serif;
+			text-decoration: none;
+			color: white;
+			p {
+				font-size: 2rem;
 			}
-			button {
-				width: 130px;
-				height: 50px;
-				border: 3px solid #90b766;
-				border-radius: 45px;
-				transition: all 0.3s;
-				cursor: pointer;
-				background: #67a26e;
-				font-size: 0.8em;
-				font-weight: 550;
-				font-family: "Montserrat", sans-serif;
-				&:hover {
-					background: #3a4929;
-					color: white;
-				}
+		}
+		.Option {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			font-size: 2rem;
+			list-style: none;
+			width: 130px;
+			border: 3px solid #90b766;
+			border-radius: 45px;
+			transition: all 0.3s;
+			cursor: pointer;
+			background: #90b766;
+			font-size: 0.8em;
+			font-weight: 550;
+			font-family: "Montserrat", sans-serif;
+			text-decoration: none;
+			color: white;
+			p {
+				font-size: 2rem;
 			}
 		}
 	}

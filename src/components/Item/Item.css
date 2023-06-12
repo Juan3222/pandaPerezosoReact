@@ -1,0 +1,59 @@
+.listBooks {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.listBooks .cardBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 287px;
+  height: 40rem;
+  background-color: #90b766;
+  border-color: #3a4929 #e6ffa3 #e6ffa3 #3a4929;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 2px;
+}
+.listBooks .cardBook .bookCover {
+  width: 250px;
+  height: 350px;
+  border-color: #e6ffa3 #3a4929 #3a4929 #e6ffa3;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 2px;
+}
+.listBooks .cardBook .cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listBooks .cardBook .cardHeader h2 {
+  width: 100%;
+  text-align: center;
+}
+.listBooks .cardBook .bookFooter .Option {
+  padding: 6px 15px;
+  border-radius: 2px;
+  background-color: #2ba8fb;
+  border: solid #186192 2px;
+  color: #ffffff;
+  font-weight: Bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.listBooks .cardBook .bookFooter .Option:hover {
+  background-color: #6fc5ff;
+  color: black;
+  box-shadow: 0 0 20px rgba(111, 197, 255, 0.3137254902);
+  transform: scale(1.1);
+}
+.listBooks .cardBook .bookFooter .Option:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}/*# sourceMappingURL=Item.css.map */

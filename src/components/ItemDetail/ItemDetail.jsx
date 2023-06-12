@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom";
+import ItemCount from "../ItemCount/ItemCount";
 
-export const Item = ({ id, title, author, price, cover, genre, stock }) => {
+export const ItemDetail = ({
+	id,
+	title,
+	author,
+	price,
+	cover,
+	genre,
+	stock,
+	category,
+}) => {
 	return (
 		<article className="cardBook">
 			<picture>
@@ -21,12 +30,18 @@ export const Item = ({ id, title, author, price, cover, genre, stock }) => {
 				<p className="bookInfo" id="bookStock">
 					Stock: {stock}
 				</p>
+				<p className="bookInfo">Categoría: {category}</p>
 			</section>
 			<footer className="bookFooter">
-				<Link to={`/book/${id}`} className="Option">
-					Detalles
-				</Link>
+				<ItemCount
+					initial={1}
+					stock={stock}
+					onAdd={(quantity) =>
+						console.log("Cantidad agregada" + quantity)
+					}
+				/>
 			</footer>
 		</article>
 	);
 };
+export default ItemDetail;
