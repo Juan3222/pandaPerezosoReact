@@ -58,7 +58,11 @@
 			font-weight: 550;
 			font-family: "Montserrat", sans-serif;
 			text-decoration: none;
-			color: white;
+			color: black;
+			&:hover {
+				background: #3a4929;
+				color: white;
+			}
 			p {
 				font-size: 2rem;
 			}

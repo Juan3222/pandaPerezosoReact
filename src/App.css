@@ -58,6 +58,10 @@
   font-weight: 550;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
+  color: black;
+}
+.header .Categories .Option:hover {
+  background: #3a4929;
   color: white;
 }
 .header .Categories .Option p {
@@ -95,10 +99,10 @@
 .listBooks .cardBook {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 287px;
-  height: 35rem;
+  height: 40rem;
   background-color: #90b766;
   border-color: #3a4929 #e6ffa3 #e6ffa3 #3a4929;
   border-style: solid;
@@ -121,6 +125,29 @@
 .listBooks .cardBook .cardHeader h2 {
   width: 100%;
   text-align: center;
+}
+.listBooks .cardBook .bookFooter .Option {
+  padding: 6px 15px;
+  border-radius: 2px;
+  background-color: #2ba8fb;
+  border: solid #186192 2px;
+  color: #ffffff;
+  font-weight: Bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.listBooks .cardBook .bookFooter .Option:hover {
+  background-color: #6fc5ff;
+  color: black;
+  box-shadow: 0 0 20px rgba(111, 197, 255, 0.3137254902);
+  transform: scale(1.1);
+}
+.listBooks .cardBook .bookFooter .Option:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 .itemDetailContainer {
