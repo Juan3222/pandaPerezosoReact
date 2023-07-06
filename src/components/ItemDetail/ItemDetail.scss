@@ -8,8 +8,8 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-		width: 287px;
-		height: 35rem;
+		width: 20rem;
+		height: 38rem;
 		background-color: #90b766;
 		border-color: #3a4929 #e6ffa3 #e6ffa3 #3a4929;
 		border-style: solid;
@@ -30,6 +30,11 @@
 			h2 {
 				width: 100%;
 				text-align: center;
+			}
+		}
+		.bookFooter {
+			.Option {
+				@extend %button;
 			}
 		}
 	}
