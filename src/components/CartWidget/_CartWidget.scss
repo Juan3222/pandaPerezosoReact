@@ -1,12 +1,18 @@
-.cart {
+.cartContainer {
 	display: flex;
 	width: 5rem;
-	height: 2rem;
 	margin-right: 2rem;
 	justify-content: center;
 	background-color: $accent;
 	gap: 1rem;
-	p {
+	.quantity {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 4rem;
+		gap: 1rem;
 		font-size: 2rem;
+		text-decoration: none;
+		color: black;
 	}
 }
