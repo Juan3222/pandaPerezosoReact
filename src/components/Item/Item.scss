@@ -1,8 +1,9 @@
 .listBooks {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2rem;
-	gap: 1rem;
+	gap: 2rem;
 	.cardBook {
 		display: flex;
 		flex-direction: column;

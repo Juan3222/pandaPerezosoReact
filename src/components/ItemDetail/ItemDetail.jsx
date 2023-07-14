@@ -24,6 +24,8 @@ export const ItemDetail = ({
 			id,
 			title,
 			price,
+			author,
+			cover,
 		};
 
 		addBook(item, quantity);
